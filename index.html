@@ -14,15 +14,15 @@
     </style>
 </head>
 <body>
-    <form class="row col-md-6 gx-5 m-auto mb-5" action="">
+    <div class="row col-md-6 gx-5 m-auto mb-5" action="">
         <div class=" input-group mb-5 my-5 ">
-            <input type="text" class="form-control" placeholder="Enter a location for Weather ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input id="input" type="text" class="form-control" placeholder="Enter a location for Weather ..." aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-outline-light bg-danger " type="button" id="search">Search</button>
           </div>
-    </form>
+     </div>
     <div class="weather-status text-center text-white mt-5">
-        <h1>Dhaka</h1>
-        <h3>38.06 °C</h3>
+        <h1> <span id="city">Dhaka</span></h1>
+        <h3><span id="temp">38.06</span> °C</h3>
     </div>
     <script src="app.js"></script>
 </body>
